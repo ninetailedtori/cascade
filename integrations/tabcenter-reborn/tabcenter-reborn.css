@@ -1,22 +1,25 @@
 :root {
-  /* These colours are (mainly) used by the
-     Container Tabs Plugin */
-  --uc-identity-colour-blue: #7ed6df;
-  --uc-identity-colour-turquoise: #55e6c1;
-  --uc-identity-colour-green: #b8e994;
-  --uc-identity-colour-yellow: #f7d794;
-  --uc-identity-colour-orange: #f19066;
-  --uc-identity-colour-red: #fc5c65;
-  --uc-identity-colour-pink: #f78fb3;
-  --uc-identity-colour-purple: #786fa6;
+  /*
+   * These colours are (mainly) used by the
+   * Container Tabs Plugin.
+   */
+  --uc-identity-colour-blue:      #8aadf4;
+  --uc-identity-colour-turquoise: #91d7e3;
+  --uc-identity-colour-green:     #a6da95;
+  --uc-identity-colour-yellow:    #eed49f;
+  --uc-identity-colour-orange:    #f5a97f;
+  --uc-identity-colour-red:       #ed8796;
+  --uc-identity-colour-pink:      #f5bde6;
+  --uc-identity-colour-purple:    #c6a0f6;
 
-  /*  Cascades main Colour Scheme */
-  --uc-base-colour: #1e2021;
-  --uc-highlight-colour: #191b1c;
-  --uc-inverted-colour: #fafafc;
-  --uc-muted-colour: #aaaaac;
-  --uc-accent-colour: var(--uc-identity-colour-purple);
-  --uc-shadow-colour: #000000;
+  /* Cascade's main colour scheme */
+  --uc-base-colour:              #24273a;
+  --uc-highlight-colour:         rgba(147, 154, 183, 0.30);
+  --uc-highlight-accent-colour:  rgba(244, 219, 214, 0.30);
+  --uc-inverted-colour:          #181926;
+  --uc-muted-colour:             #a5adcb;
+  --uc-accent-colour:            #f4dbd6;
+  --uc-shadow-colour:            #5b6078;
 }
 
 #topmenu {
@@ -28,9 +31,12 @@
   background: var(--uc-base-colour);
 }
 
-.tab:hover,
+.tab:hover {
+  background: var(--uc-highlight-colour) !important;
+}
+
 .tab.active {
-  background: var(--uc-highlight-colour);
+  background: var(--uc-highlight-accent-colour);
 }
 
 #tablist-wrapper .tab-title-wrapper {
