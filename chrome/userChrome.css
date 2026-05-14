@@ -26,8 +26,8 @@
 
 *==============================================================================================*/
 
-@import "includes/cascade-config.css";
 @import "../integrations/catppuccin/cascade-macchiato.css";
+@import "includes/cascade-config-mouse.css";
 
 @import "includes/cascade-layout.css";
 @import "includes/cascade-responsive.css";
@@ -36,3 +36,5 @@
 @import "includes/cascade-nav-bar.css";
 @import "includes/cascade-tabs.css";
 @import "../integrations/tabcenter-reborn/cascade-tcr.css";
+
+@import "user.css";
