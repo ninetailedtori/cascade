@@ -5,11 +5,12 @@ title: ""
 labels: bug
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+<!-- @format -->
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+**Describe the bug** A clear and concise description of what the bug is.
 
-**Screenshots** (optional)
-If applicable, add screenshots to help explain your problem.
+**Expected behavior** A clear and concise description of what you expected to
+happen.
+
+**Screenshots** (optional) If applicable, add screenshots to help explain your
+problem.

@@ -1,4 +1,5 @@
-assets/preview.afphoto
-assets/catppuccin.afphoto
-assets/rosepine.afphoto
+assets/*.afphoto
 .DS_Store
+/node_modules/
+/.idea/
+/.vscode/

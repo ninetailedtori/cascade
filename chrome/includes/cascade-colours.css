@@ -1,68 +1,155 @@
-/*---+---+---+---+---+---+---+
- | C | O | L | O | U | R | S |
- +---+---+---+---+---+---+---*/
+/**
+ *  Colours
+ *
+ * @format
+ */
 
 :root {
-  /* These colours are (mainly) used by the
-   Container Tabs Plugin */
-  --uc-identity-colour-blue: #8aadf4;
-  --uc-identity-colour-turquoise: #8bd5ca;
-  --uc-identity-colour-green: #a6da95;
-  --uc-identity-colour-yellow: #eed49f;
-  --uc-identity-colour-orange: #f5a97f;
-  --uc-identity-colour-red: #ed8796;
-  --uc-identity-colour-pink: #f5bde6;
-  --uc-identity-colour-purple: #c6a0f6;
+  /*
+   * Catppuccin
+   */
+  --ctp-rosewater: #f4dbd6;
+  --ctp-flamingo: #f0c6c6;
+  --ctp-pink: #f5bde6;
+  --ctp-mauve: #c6a0f6;
+  --ctp-red: #ed8796;
+  --ctp-maroon: #ee99a0;
+  --ctp-peach: #f5a97f;
+  --ctp-yellow: #eed49f;
+  --ctp-green: #a6da95;
+  --ctp-teal: #8bd5ca;
+  --ctp-sky: #91d7e3;
+  --ctp-sapphire: #7dc4e4;
+  --ctp-blue: #8aadf4;
+  --ctp-lavender: #b7bdf8;
 
-  /*  Cascades main Colour Scheme */
   --ctp-text: #cad3f5;
+  --ctp-subtext1: #b8c0e0;
   --ctp-subtext0: #a5adcb;
 
-  --ctp-base: #24273a;
-
   --ctp-overlay2: #939ab7;
-  --ctp-overlay2-30: #939ab74d;
+  --ctp-overlay1: #8087a2;
   --ctp-overlay0: #6e738d;
 
-  --ctp-rosewater: #f4dbd6;
-  --ctp-rosewater-30: #f4dbd64d;
-}
+  --ctp-surface2: #5b6078;
+  --ctp-surface1: #494d64;
+  --ctp-surface0: #363a4f;
 
-:root {
+  --ctp-base: #24273a;
+  --ctp-mantle: #1e2030;
+  --ctp-crust: #181926;
+
+  --accent: #f4dbd6;
+  --accent-30: #f4dbd64d;
+  --ctp-overlay2-30: #939ab74d;
+  --ctp-surface0-30: #363a4f4d;
+  --ctp-crust-30: #1819264d;
+
+  --ctp-rosewater-filter: brightness(0) saturate(100%) invert(83%) sepia(22%)
+    saturate(509%) hue-rotate(314deg) brightness(113%) contrast(91%);
+  --ctp-flamingo-filter: brightness(0) saturate(100%) invert(78%) sepia(22%)
+    saturate(512%) hue-rotate(311deg) brightness(109%) contrast(88%);
+  --ctp-pink-filter: brightness(0) saturate(100%) invert(75%) sepia(23%)
+    saturate(509%) hue-rotate(279deg) brightness(109%) contrast(91%);
+  --ctp-mauve-filter: brightness(0) saturate(100%) invert(61%) sepia(70%)
+    saturate(1021%) hue-rotate(210deg) brightness(109%) contrast(93%);
+  --ctp-red-filter: brightness(0) saturate(100%) invert(54%) sepia(37%)
+    saturate(528%) hue-rotate(301deg) brightness(110%) contrast(87%);
+  --ctp-maroon-filter: brightness(0) saturate(100%) invert(66%) sepia(32%)
+    saturate(496%) hue-rotate(306deg) brightness(99%) contrast(89%);
+  --ctp-peach-filter: brightness(0) saturate(100%) invert(69%) sepia(34%)
+    saturate(532%) hue-rotate(335deg) brightness(101%) contrast(91%);
+  --ctp-yellow-filter: brightness(0) saturate(100%) invert(87%) sepia(19%)
+    saturate(527%) hue-rotate(0deg) brightness(96%) contrast(93%);
+  --ctp-green-filter: brightness(0) saturate(100%) invert(86%) sepia(26%)
+    saturate(541%) hue-rotate(53deg) brightness(100%) contrast(75%);
+  --ctp-teal-filter: brightness(0) saturate(100%) invert(85%) sepia(22%)
+    saturate(544%) hue-rotate(117deg) brightness(96%) contrast(78%);
+  --ctp-sky-filter: brightness(0) saturate(100%) invert(84%) sepia(28%)
+    saturate(526%) hue-rotate(147deg) brightness(98%) contrast(81%);
+  --ctp-sapphire-filter: brightness(0) saturate(100%) invert(75%) sepia(42%)
+    saturate(530%) hue-rotate(168deg) brightness(93%) contrast(91%);
+  --ctp-blue-filter: brightness(0) saturate(100%) invert(65%) sepia(33%)
+    saturate(519%) hue-rotate(182deg) brightness(98%) contrast(94%);
+  --ctp-lavender-filter: brightness(0) saturate(100%) invert(73%) sepia(33%)
+    saturate(510%) hue-rotate(199deg) brightness(98%) contrast(99%);
+  --ctp-text-filter: brightness(0) saturate(100%) invert(73%) sepia(80%)
+    saturate(1008%) hue-rotate(190deg) brightness(120%) contrast(92%);
+  --ctp-subtext1-filter: brightness(0) saturate(100%) invert(78%) sepia(12%)
+    saturate(515%) hue-rotate(191deg) brightness(101%) contrast(81%);
+  --ctp-subtext0-filter: brightness(0) saturate(100%) invert(78%) sepia(15%)
+    saturate(521%) hue-rotate(190deg) brightness(95%) contrast(70%);
+  --ctp-overlay2-filter: brightness(0) saturate(100%) invert(69%) sepia(16%)
+    saturate(521%) hue-rotate(192deg) brightness(90%) contrast(72%);
+  --ctp-overlay1-filter: brightness(0) saturate(100%) invert(68%) sepia(16%)
+    saturate(523%) hue-rotate(191deg) brightness(77%) contrast(80%);
+  --ctp-overlay0-filter: brightness(0) saturate(100%) invert(68%) sepia(18%)
+    saturate(535%) hue-rotate(194deg) brightness(63%) contrast(78%);
+  --ctp-surface2-filter: brightness(0) saturate(100%) invert(52%) sepia(34%)
+    saturate(510%) hue-rotate(193deg) brightness(54%) contrast(61%);
+  --ctp-surface1-filter: brightness(0) saturate(100%) invert(46%) sepia(36%)
+    saturate(516%) hue-rotate(194deg) brightness(46%) contrast(72%);
+  --ctp-surface0-filter: brightness(0) saturate(100%) invert(41%) sepia(39%)
+    saturate(513%) hue-rotate(194deg) brightness(39%) contrast(82%);
+  --ctp-base-filter: brightness(0) saturate(100%) invert(34%) sepia(36%)
+    saturate(527%) hue-rotate(195deg) brightness(38%) contrast(95%);
+  --ctp-mantle-filter: brightness(0) saturate(100%) invert(29%) sepia(42%)
+    saturate(541%) hue-rotate(198deg) brightness(30%) contrast(92%);
+  --ctp-crust-filter: brightness(0) saturate(100%) invert(27%) sepia(45%)
+    saturate(543%) hue-rotate(200deg) brightness(25%) contrast(93%);
+
+  /*
+   * These colours are (mainly) used by the
+   * Container Tabs Plugin
+   */
+  --uc-identity-colour-blue: var(--ctp-blue);
+  --uc-identity-colour-turquoise: var(--ctp-teal);
+  --uc-identity-colour-green: var(--ctp-green);
+  --uc-identity-colour-yellow: var(--ctp-yellow);
+  --uc-identity-colour-orange: var(--ctp-peach);
+  --uc-identity-colour-red: var(--ctp-red);
+  --uc-identity-colour-pink: var(--ctp-pink);
+  --uc-identity-colour-purple: var(--ctp-mauve);
+
+  /*
+   * Main bulk of the colours here!
+   */
   --lwt-frame: var(--ctp-base) !important;
-  --lwt-accent-color: var(--lwt-frame) !important;
-  --lwt-text-color: var(--uc-inverted-colour) !important;
+  --lwt-accent-color: var(--accent) !important;
+  --lwt-text-color: var(--ctp-text) !important;
 
-  --toolbar-field-color: var(--uc-inverted-colour) !important;
-  --toolbar-field-background-color: var(--lwt-frame) !important;
+  --toolbar-field-color: var(--ctp-subtext0) !important;
+  --toolbar-field-background-color: var(--ctp-surface0) !important;
 
-  --toolbar-field-focus-color: var(--uc-inverted-colour) !important;
+  --toolbar-field-focus-color: var(--ctp-text) !important;
   --toolbar-field-focus-background-color: var(--ctp-overlay2-30) !important;
-  --toolbar-field-focus-border-color: var(--uc-accent-colour) !important;
+  --toolbar-field-focus-border-color: var(--accent) !important;
 
-  --lwt-toolbar-field-highlight: var(--uc-inverted-colour) !important;
+  --lwt-toolbar-field-highlight: var(--ctp-text) !important;
   --lwt-toolbar-field-highlight-text: var(--ctp-overlay2-30) !important;
-  --urlbar-popup-url-color: var(--uc-accent-colour) !important;
 
-  --lwt-tab-text: var(--lwt-text-colour) !important;
-
+  --lwt-tab-text: var(--ctp-text) !important;
   --lwt-selected-tab-background-color: var(--ctp-overlay2-30) !important;
 
-  --toolbar-bgcolor: var(--lwt-frame) !important;
-  --toolbar-color: var(--lwt-text-color) !important;
-  --toolbarseparator-color: var(--uc-accent-colour) !important;
-  --toolbarbutton-hover-background: var(--ctp-overlay2-30) !important;
-  --toolbarbutton-active-background: var(--ctp-rosewater-30) !important;
-  --toolbarbutton-icon-fill-attention: var(--uc-accent-colour) !important;
-  --toolbarbutton-icon-fill-attention-text: var(--uc-accent-colour) !important;
+  --lwt-sidebar-background-color: var(--ctp-surface0) !important;
 
-  --lwt-sidebar-background-color: var(--lwt-frame) !important;
-  --sidebar-background-color: var(--lwt-sidebar-background-color) !important;
+  --urlbar-popup-url-color: var(--accent) !important;
+
+  --toolbar-bgcolor: var(--ctp-surface0) !important;
+  --toolbar-color: var(--ctp-subtext0) !important;
+  --toolbarseparator-color: var(--accent) !important;
+  --toolbarbutton-hover-background: var(--ctp-overlay2-30) !important;
+  --toolbarbutton-active-background: var(--accent-30) !important;
+  --toolbarbutton-icon-fill: var(--ctp-subtext0) !important;
+  --toolbarbutton-icon-fill-attention: var(--accent) !important;
+  --toolbarbutton-icon-fill-attention-text: var(--accent) !important;
+
+  --sidebar-background-color: var(--ctp-surface0) !important;
 
   --urlbar-box-bgcolor: var(--ctp-overlay2-30) !important;
-  --urlbar-box-text-color: var(--uc-muted-colour) !important;
+  --urlbar-box-text-color: var(--ctp-subtext0) !important;
   --urlbar-box-hover-bgcolor: var(--ctp-overlay2-30) !important;
-  --urlbar-box-hover-text-color: var(--uc-inverted-colour) !important;
+  --urlbar-box-hover-text-color: var(--ctp-text) !important;
   --urlbar-box-focus-bgcolor: var(--ctp-overlay2-30) !important;
 }
 

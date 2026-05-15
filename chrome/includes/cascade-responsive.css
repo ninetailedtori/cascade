@@ -1,3 +1,9 @@
+/**
+ * Responsive Reactivity
+ *
+ * @format
+ */
+
 @media (min-width: 1000px) {
   #navigator-toolbox {
     display: flex;

@@ -1,3 +1,9 @@
+/**
+ * Layout
+ *
+ * @format
+ */
+
 :root {
   --toolbarbutton-border-radius: var(--uc-border-radius) !important;
   --tab-border-radius: var(--uc-border-radius) !important;
@@ -38,9 +44,9 @@
 
 /* fix Shield Icon padding */
 #urlbar-input-container[pageproxystate="valid"]
-> #tracking-protection-icon-container
-> #tracking-protection-icon-box
-> #tracking-protection-icon {
+  > #tracking-protection-icon-container
+  > #tracking-protection-icon-box
+  > #tracking-protection-icon {
   padding-bottom: 1px;
 }
 

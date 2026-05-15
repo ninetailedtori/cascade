@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <div align="center">
 
 # Cascade
@@ -7,9 +9,9 @@
 ![Cascade Preview](assets/preview.webp)
 
 Cascade aims to remove a lot of the subjective clutter default Firefox comes
-with. The theme is also highly inspired by the stylistic choices
-of [SimpleFox](https://github.com/migueravila/SimpleFox) 🦊
-by [Miguel Ávila](https://github.com/migueravila).
+with. The theme is also highly inspired by the stylistic choices of
+[SimpleFox](https://github.com/migueravila/SimpleFox) 🦊 by
+[Miguel Ávila](https://github.com/migueravila).
 
 <br>
 
@@ -42,8 +44,9 @@ by [Miguel Ávila](https://github.com/migueravila).
 
 ### Documentation
 
-*
-*[Installation](https://cascadefox.github.io/installation.html) • [Customisation](https://cascadefox.github.io/customisation.html) • [Integrations](https://cascadefox.github.io/integrations.html) • [Keyboard Shortcuts](https://cascadefox.github.io/shortcuts.html)
-**
+- \*[Installation](https://cascadefox.github.io/installation.html) •
+  [Customisation](https://cascadefox.github.io/customisation.html) •
+  [Integrations](https://cascadefox.github.io/integrations.html) •
+  [Keyboard Shortcuts](https://cascadefox.github.io/shortcuts.html) \*\*
 
 <br>
