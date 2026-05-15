@@ -17,7 +17,7 @@
 #urlbar:is([open], [focused], [breakout][breakout-extend]) {
   border: 2px solid #f4dbd6 !important;
   border-radius: 4px !important;
-  background: #363a4f !important;
+  background: #363a4f4d !important;
   backdrop-filter: blur 1rem !important;
 }
 
