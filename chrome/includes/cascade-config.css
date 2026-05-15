@@ -27,9 +27,11 @@
 #PanelUI-menu-button {
   padding: 0px !important;
 }
+
 #PanelUI-menu-button .toolbarbutton-icon {
   width: 1px !important;
 }
+
 #PanelUI-menu-button .toolbarbutton-badge-stack {
   padding: 0px !important;
 }
@@ -44,7 +46,7 @@
  *  4 – toolbar on bottom
  */
 :root {
-  --uc-toolbar-position: 4;
+  --uc-toolbar-position: 0;
 }
 
 /*  Darken the Personal Toolbar by X amount
@@ -56,6 +58,7 @@
     --uc-darken-toolbar: 0.2;
   }
 }
+
 @media (prefers-color-scheme: light) {
   :root {
     --uc-darken-toolbar: 0;
@@ -71,8 +74,8 @@
    *  If enabled the max-width is applied on focus
    *  otherwise the URL Bar will always be it's min-width
    */
-  --uc-urlbar-min-width: 35vw;
-  --uc-urlbar-max-width: 35vw;
+  --uc-urlbar-min-width: 0vw;
+  --uc-urlbar-max-width: 100vw;
 
   /*  Position of the URL Bar
    *  possible values:
@@ -102,10 +105,12 @@
 #identity-permission-box {
   display: none !important;
 }
+
 /* Hides extension page box */
 #identity-box.extensionPage {
   display: none !important;
 }
+
 /* Hides encryption AND permission items */
 /* #identity-box { display: none !important } */
 
@@ -113,7 +118,7 @@
 /* #page-action-buttons > :not(#urlbar-zoom-button) { display: none !important; } */
 
 /* Hide the »Go«-arrow in the URL Bar */
-#urlbar-go-button {
+.urlbar-go-button {
   display: none !important;
 }
 

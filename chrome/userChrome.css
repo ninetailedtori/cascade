@@ -26,15 +26,18 @@
 
 *==============================================================================================*/
 
-@import "../integrations/catppuccin/cascade-macchiato.css";
+/* Use a symlink to attach file to the `cascade-colours.css` location. */
+@import "includes/cascade-colours.css";
+
+/* Main cascade config. */
 @import "includes/cascade-config-mouse.css";
 
+/* Submodules of this theme. */
 @import "includes/cascade-layout.css";
 @import "includes/cascade-responsive.css";
 @import "includes/cascade-floating-panel.css";
-
 @import "includes/cascade-nav-bar.css";
 @import "includes/cascade-tabs.css";
-@import "../integrations/tabcenter-reborn/cascade-tcr.css";
 
+/* User-specific irrelevant overrides. */
 @import "user.css";

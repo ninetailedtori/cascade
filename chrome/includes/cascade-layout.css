@@ -38,15 +38,16 @@
 
 /* fix Shield Icon padding */
 #urlbar-input-container[pageproxystate="valid"]
-  > #tracking-protection-icon-container
-  > #tracking-protection-icon-box
-  > #tracking-protection-icon {
+> #tracking-protection-icon-container
+> #tracking-protection-icon-box
+> #tracking-protection-icon {
   padding-bottom: 1px;
 }
 
 #TabsToolbar {
   order: 2;
 }
+
 #nav-bar {
   order: 3;
 }

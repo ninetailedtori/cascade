@@ -1,7 +1,7 @@
 /* remove gap after pinned tabs */
 #tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs])
-  > #tabbrowser-arrowscrollbox
-  > .tabbrowser-tab:nth-child(1 of :not([pinned], [hidden])) {
+> #tabbrowser-arrowscrollbox
+> .tabbrowser-tab:nth-child(1 of :not([pinned], [hidden])) {
   margin-inline-start: 0 !important;
 }
 
@@ -17,9 +17,9 @@
 
 /* multi tab selection */
 #tabbrowser-tabs:not([noshadowfortests])
-  .tabbrowser-tab:is([multiselected])
-  > .tab-stack
-  > .tab-background:-moz-lwtheme {
+.tabbrowser-tab:is([multiselected])
+> .tab-stack
+> .tab-background:-moz-lwtheme {
   outline-color: var(--toolbarseparator-color) !important;
 }
 
@@ -27,26 +27,32 @@
 .tabbrowser-tab:not([pinned]) .tab-close-button {
   display: var(--show-tab-close-button) !important;
 }
+
 .tabbrowser-tab:not([pinned]):hover .tab-close-button {
   display: var(--show-tab-close-button-hover) !important;
 }
 
 /* adaptive tab width */
-.tabbrowser-tab[selected][fadein]:not([pinned]):not(tab-group[collapsed] .tabbrowser-tab) {
+.tabbrowser-tab[selected][fadein]:not([pinned]):not(
+    tab-group[collapsed] .tabbrowser-tab
+  ) {
   max-width: var(--uc-active-tab-width) !important;
 }
-.tabbrowser-tab[fadein]:not([selected]):not([pinned]):not(tab-group[collapsed] .tabbrowser-tab) {
+
+.tabbrowser-tab[fadein]:not([selected]):not([pinned]):not(
+    tab-group[collapsed] .tabbrowser-tab
+  ) {
   max-width: var(--uc-inactive-tab-width) !important;
 }
 
 /* container tabs indicator */
 #TabsToolbar .tab-context-line {
-    margin: 2px var(--container-tabs-indicator-margin) 0
-        var(--container-tabs-indicator-margin) !important;
-    height: 1px !important;
+  margin: 2px var(--container-tabs-indicator-margin) 0 var(--container-tabs-indicator-margin) !important;
+  height: 1px !important;
 }
+
 .tab-context-line {
-    box-shadow: var(--uc-identity-glow) var(--identity-tab-color) !important;
+  box-shadow: var(--uc-identity-glow) var(--identity-tab-color) !important;
 }
 
 /* show favicon when media is playing but tab is hovered */
@@ -87,7 +93,7 @@
 
 /* change the colours of the speaker icon on active tab to match tab colours */
 .tabbrowser-tab[selected]
-  .tab-icon-overlay:not([sharing], [crashed]):is(
+.tab-icon-overlay:not([sharing], [crashed]):is(
     [soundplaying],
     [muted],
     [activemedia-blocked]
@@ -105,7 +111,7 @@
 }
 
 .tabbrowser-tab:not([image])
-  .tab-icon-overlay:not([pinned], [sharing], [crashed]) {
+.tab-icon-overlay:not([pinned], [sharing], [crashed]) {
   top: 0 !important;
 
   padding: 0 !important;
@@ -125,7 +131,7 @@
 .tabbrowser-tab[selected] .tab-icon-overlay:not([crashed])[soundplaying]:hover,
 .tabbrowser-tab[selected] .tab-icon-overlay:not([crashed])[muted]:hover,
 .tabbrowser-tab[selected]
-  .tab-icon-overlay:not([crashed])[activemedia-blocked]:hover {
+.tab-icon-overlay:not([crashed])[activemedia-blocked]:hover {
   color: currentColor !important;
   stroke: var(--toolbar-color) !important;
   background-color: var(--toolbar-color) !important;
@@ -151,6 +157,7 @@
   background-color: var(--uc-highlight-colour) !important;
   outline: none !important;
 }
+
 .tab-background {
   margin: 0px !important;
   border-radius: 0px !important;
@@ -162,12 +169,19 @@
   border-radius: var(--uc-border-radius) !important;
   width: 100%;
   /* disable tab group label changing colour when collapsed */
-  color: light-dark(var(--tab-group-color-pale), var(--tab-group-label-text-dark)) !important;
-  background-color: light-dark(var(--tab-group-color), var(--tab-group-color-invert)) !important;
+  color: light-dark(
+          var(--tab-group-color-pale),
+          var(--tab-group-label-text-dark)
+  ) !important;
+  background-color: light-dark(
+          var(--tab-group-color),
+          var(--tab-group-color-invert)
+  ) !important;
 }
 
 /* hide vertical tabs new tab button, there is also one for overflow */
-#vertical-tabs-newtab-button, #tabs-newtab-button {
+#vertical-tabs-newtab-button,
+#tabs-newtab-button {
   display: none !important;
 }
 

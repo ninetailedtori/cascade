@@ -1,5 +1,5 @@
 #navigator-toolbox:not(:-moz-lwtheme) {
-  background: var(--toolbar-field-background-color) !important;
+  background: #363a4f !important;
 }
 
 #nav-bar {
@@ -10,34 +10,42 @@
   background: transparent !important;
 }
 
-#urlbar,
-#urlbar * {
-  outline: none !important;
-  box-shadow: none !important;
+#urlbar {
+  box-shadow: 1px 1px #494d64 !important;
 }
 
-#urlbar-background {
-  border: transparent !important;
+#urlbar:is([open], [focused], [breakout][breakout-extend]) {
+  border: 2px solid #f4dbd6 !important;
+  border-radius: 4px !important;
+  background: #363a4f !important;
+  backdrop-filter: blur 1rem !important;
 }
 
-#urlbar[focused="true"] > #urlbar-background,
-#urlbar:not([open]) > #urlbar-background {
-  background: var(--toolbar-field-background-color) !important;
-}
-
-#urlbar[open] > #urlbar-background {
-  background: var(--toolbar-field-background-color) !important;
-}
-
-.urlbarView-row:hover > .urlbarView-row-inner,
-.urlbarView-row[selected] > .urlbarView-row-inner {
-  background: var(--toolbar-field-focus-background-color) !important;
+.urlbar-background {
+  background: inherit !important;
 }
 
 .urlbar-icon,
 #urlbar-go-button {
   margin: auto;
 }
+
 .urlbar-page-action {
-  padding: 0 inherit !important;
+  padding: 0 !important;
+  margin-left: 6.5px !important;
+}
+
+#star-button[starred],
+#urlbar-revert-button,
+#reader-mode-button[readeractive] > .urlbar-icon,
+#translations-button-icon #translations-button[translationsactive] > &,
+#translations-button-circle-arrows {
+  fill: #f4dbd6 !important;
+}
+
+:root {
+  --urlbarView-separator-color: #a5adcb !important;
+  --urlbarView-hover-background: #494d64 !important;
+  --urlbarView-highlight-background: #f4dbd6 !important;
+  --urlbarView-highlight-color: #24273a !important;
 }

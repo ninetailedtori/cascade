@@ -6,8 +6,7 @@
   /*  Global Border Radius
    *  applied to ALL UI elements
    */
-  --uc-border-radius: 2px;
-
+  --uc-border-radius: 4px !important;
   /*  The distance the Statuspanel floats
    *  away from the window border
    *  0 places directly in the corner
@@ -40,7 +39,7 @@
  *  4 – toolbar on bottom
  */
 :root {
-  --uc-toolbar-position: 0;
+  --uc-toolbar-position: 0Q;
 }
 
 /*  Darken the Personal Toolbar by X amount
@@ -52,6 +51,7 @@
     --uc-darken-toolbar: 0.2;
   }
 }
+
 @media (prefers-color-scheme: light) {
   :root {
     --uc-darken-toolbar: 0;
@@ -90,10 +90,12 @@
 #identity-permission-box {
   display: none !important;
 }
+
 /* Hides extension page box */
 #identity-box.extensionPage {
   display: none !important;
 }
+
 /* Hides encryption AND permission items */
 /* #identity-box { display: none !important } */
 
@@ -108,7 +110,7 @@
 }
 
 /* Hide the »Go«-arrow in the URL Bar */
-#urlbar-go-button {
+.urlbar-go-button {
   display: none !important;
 }
 

@@ -20,8 +20,8 @@
 }
 
 #sidebar-box[sidebarcommand*="side-view"]
-  #sidebar-header
-  > *:not(#sidebar-close) {
+#sidebar-header
+> *:not(#sidebar-close) {
   display: none !important;
 }
 
