@@ -48,10 +48,24 @@
   margin-left: 6.5px !important;
 }
 
+toolbar
+  .toolbarbutton-1:not([disabled]):hover
+  > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack) {
+  color: var(--ctp-subtext1) !important;
+}
+
 #star-button[starred],
 #urlbar-revert-button,
 #reader-mode-button[readeractive] > .urlbar-icon,
-#translations-button-icon #translations-button[translationsactive] > &,
+#translations-button[translationsactive] > #translations-button-icon,
 #translations-button-circle-arrows {
   fill: var(--accent) !important;
+}
+
+.tab-icon-stack > :not([selected]) {
+  fill: var(--ctp-subtext0) !important;
+}
+
+.tab-icon-stack > [selected] {
+  fill: var(--ctp-accent) !important;
 }

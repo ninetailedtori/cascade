@@ -1,1 +1,6 @@
 /** @format */
+
+:root {
+  color-scheme: dark !important;
+  -moz-content-preferred-color-scheme: dark;
+}

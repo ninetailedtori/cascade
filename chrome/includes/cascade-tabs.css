@@ -22,12 +22,14 @@
 
 /* remove tab shadow */
 .tabbrowser-tab > .tab-stack > .tab-background {
+  background-color: inherit !important;
   box-shadow: none !important;
 }
 
 /* selected tab colour fix */
 .tabbrowser-tab[selected] .tab-background {
-  background-color: var(--uc-highlight-colour) !important;
+  color: var(--ctp-base) !important;
+  background-color: var(--ctp-accent) !important;
   outline: none !important;
 }
 
